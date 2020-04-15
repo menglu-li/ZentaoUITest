@@ -18,6 +18,10 @@ class ReadConf:
         report_url = self.configparser.get('default', 'report_url')
         return report_url
 
+    def get_cases_url(self):
+        cases_url = self.configparser.get('default', 'cases_url')
+        return cases_url
+
 if __name__ == '__main__':
     print(ReadConf().get_login_url())
 

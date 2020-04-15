@@ -3,8 +3,7 @@ import os,time
 from common.readconf import *
 import HTMLTestRunner
 
-current_path = os.path.dirname(__file__)
-cases_path = os.path.join(current_path, './testcases/')
+cases_path = ReadConf().get_cases_url()
 report_path = ReadConf().get_report_url()
 
 # 用discover获取所有test_开头的case文件

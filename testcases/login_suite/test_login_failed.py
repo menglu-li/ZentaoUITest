@@ -3,6 +3,7 @@ from webdriver.setup import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class LoginFailed(unittest.TestCase):
 
     def setUp(self) -> None:
@@ -13,7 +14,7 @@ class LoginFailed(unittest.TestCase):
 
     def test_case_01(self):
         '''验证正确用户名+错误密码登录'''
-        self.driver.find_element(By.ID, 'account').send_keys('admin')
+        self.driver.find_element(By.ID, 'account').send_keys('test01')
         self.driver.find_element(By.NAME, 'password').send_keys('123456')
         self.driver.find_element(By.ID, 'submit').click()
         time.sleep(2)
