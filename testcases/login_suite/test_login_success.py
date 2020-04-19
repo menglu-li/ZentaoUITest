@@ -1,6 +1,5 @@
 import unittest
-from selenium import webdriver
-from webdriver.setup import *
+from common.setup import *
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
